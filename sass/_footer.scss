@@ -1,0 +1,43 @@
+footer {
+  grid-column: full-start / full-end;
+  background: $dark-gray-1;
+  color: $light-gray-1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 5rem;
+  line-height: 3.5rem;
+
+  @media only screen and (max-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  & ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+
+    & li a {
+      text-decoration: none;
+      color: $light-gray-1;
+    }
+  }
+
+  & h4 {
+    font-size: 1.7rem;
+    @media only screen and (max-width: $bp-md) {
+      padding-top: 2rem;
+    }
+  }
+
+  & .social-media-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+
+    & svg {
+      height: 4rem;
+      width: 4rem;
+      fill: $primary-light;
+    }
+  }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Dressify&trade;</title>
+</head>
+
+<body>
+    <nav class="prenav">
+        <p>Free Shipping on any orders over $50</p>
+        <div class="right-nav">
+            <a href="#" class="prenav--a login">Login</a> |
+            <a href="#" class="prenav--a prenav--a__create create">Create Account</a>
+        </div>
+    </nav>
+    <nav class="main-nav">
+        <h2 class="main-title">Dressify&trade;</h2>
+        <div class="menu-btn-container">
+            <button class="main-nav__menu-btn" onclick="menuToggle()"></button>
+        </div>
+        <ul class="navlist">
+            <li class="navlist__item"><a href="#" class="navlist__link special">New Arrivals</a>
+                <ul class="dropdown-menu slideDown">
+                    <li><a href="#">All New Arrivals</a></li>
+                    <li><a href="#">Florals</a></li>
+                    <li><a href="#">Linen</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Footwear</a></li>
+                </ul>
+            </li>
+            <li class="navlist__item"><a href="#" class="navlist__link">Dresses</a>
+                <ul class="dropdown-menu slideDown">
+                    <li><a href="#">Mini Dresses</a></li>
+                    <li><a href="#">Midi Dresses</a></li>
+                    <li><a href="#">Maxi Dresses</a></li>
+                    <li><a href="#">Formal Dresses</a></li>
+                    <li><a href="#">Party Dresses</a></li>
+                </ul>
+            </li>
+            <li class="navlist__item"><a href="#" class="navlist__link">Tops</a>
+                <ul class="dropdown-menu slideDown">
+                    <li><a href="#">Sleeveless</a></li>
+                    <li><a href="#">Crop Tops</a></li>
+                    <li><a href="#">Sweaters and Sweatshirts</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Bodysuits</a></li>
+                </ul>
+            </li>
+            <li class="navlist__item"><a href="#" class="navlist__link">Bottoms</a>
+                <ul class="dropdown-menu slideDown">
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">High Waist Pants</a></li>
+                    <li><a href="#">Skirts and Shorts</a></li>
+                    <li><a href="#">Joggers and Sweatpants</a></li>
+                    <li><a href="#">Leggings</a></li>
+                </ul>
+            </li>
+            <li class="navlist__item"><a href="#" class="navlist__link">Sale</a>
+                <ul class="dropdown-menu slideDown">
+                    <li><a href="#">Sale: Up to 50% Off</a></li>
+                    <li><a href="#">Last Chance Items</a></li>
+                    <li><a href="#">Plus Size</a></li>
+                    <li><a href="#">View All</a></li>
+                </ul>
+            </li>
+            <li class="navlist__item"><a href="#" class="navlist__link" id="cart-link">
+                    <svg class="top-nav__icon" title="Cart">
+                        <use xlink:href="img/sprite.svg#icon-cart">
+                    </svg>
+                    (2)</a>
+                <ul class="dropdown-menu slideDown cart" id="cart">
+                    <li class="cart__list-item">
+                        <a href="#">
+                            <img src="img/dress3.jpg" class="cart__img">
+                            <span class="cart__title">Clarissa Dress - Size 8</span>
+                            <span class="cart__price">$65</span>
+                        </a>
+                    </li>
+                    <li class="cart__list-item">
+                        <a href="#">
+                            <img src="img/cart2.jpg" class="cart__img">
+                            <span class="cart__title">Wool Sweater - Sm</span>
+                            <span class="cart__price">$50</span>
+                        </a>
+                    </li>
+                    <li class="cart__list-item"><a href="#"><span class="cart__total">Cart Total: $115.00</span></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="slidershow">
+            <div class="slideshow">
+                <div class="slideshow--1"></div>
+                <div class="slideshow--2"></div>
+                <div class="slideshow--3"></div>
+                <div class="slideshow--4"></div>
+                <div class="hero-text">
+                    <h1>New Spring Arrivals</h1>
+                    <a href="#shopnow" class="hero__link">Shop Now</a>
+                </div>
+                <div class="hero-badge">
+                    <span class="hero-badge--small-text hero-badge--top-text">Get Up To</span>
+                    <span class="hero-badge--lg-text hero-badge--mid-text-1">20</span>
+                    <span class="hero-badge--med-text">% OFF</span>
+                    <span class="hero-badge--small-text hero-badge--bottom-text">Use discount code JXDF20 at
+                        checkout</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="shopnow" class="new-arrivals">
+        <h3>New Arrivals</h3>
+        <div class="dresses">
+            <a href="#" class="dress dress--1">
+                <div class="img-wrapper">
+                    <img class="obj-pos-top dress__img" src="img/dress1.jpg">
+                    <div class="quick-view">Quick View</div>
+                </div>
+                <div class="dress__name">the mary</div>
+                <div class="dress__price">$115</div>
+            </a>
+            <a href="#" class="dress dress--2">
+                <div class="img-wrapper">
+                    <img src="img/dress2.jpg" class="obj-pos-top dress__img">
+                    <div class="quick-view">Quick View</div>
+                </div>
+                <div class="dress__name">the lorraine</div>
+                <div class="dress__price">$95</div>
+            </a>
+            <a href="#" class="dress dress--3">
+                <div class="img-wrapper">
+                    <img src="img/dress3.jpg" class="dress__img">
+                    <div class="quick-view">Quick View</div>
+                </div>
+                <div class="dress__name">the clarissa</div>
+                <div class="dress__price">$65</div>
+            </a>
+        </div>
+
+    </section>
+    <section class="favorites">
+        <div class="favorites__img">
+            <h3 class="favorites-headline">Your Favorites, Back in Stock</h3>
+            <a href="#" class="btn btn-default btn-basics">Shop Basics</a>
+            <a href="#" class="btn btn-default btn-best-sellers">Shop Bestsellers</a>
+        </div>
+    </section>
+    <section class="connect">
+        <h3>#connectwithus</h3>
+
+        <div id="rarr">></div>
+        <div id="larr">
+            <</div> <div class="gallery-wrapper">
+                <div class="insta-gallery">
+
+                    <div class="insta-img-wrapper">
+                        <img class="insta-gallery__img" src="img/insta1.jpg">
+                        <div class="insta-hover-view"><span>#rideordie #testify #fashion</span></div>
+                    </div>
+                    <div class="insta-img-wrapper">
+                        <img class="insta-gallery__img" src="img/insta2.jpg">
+                        <div class="insta-hover-view"><span>#photooftheday #instagood #nofilter</span></div>
+                    </div>
+                    <div class="insta-img-wrapper">
+                        <img class="insta-gallery__img" src="img/insta3.jpg">
+                        <div class="insta-hover-view"><span>#nofilter #instagood #fashion</span></div>
+                    </div>
+                    <div class="insta-img-wrapper">
+                        <img class="insta-gallery__img" src="img/insta4.jpg">
+                        <div class="insta-hover-view"><span>#igers #photooftheday #instagood</span></div>
+                    </div>
+                    <div class="insta-img-wrapper">
+                        <img class="insta-gallery__img" src="img/insta5.jpg">
+                        <div class="insta-hover-view"><span>#picoftheday #testify #nofilter</span></div>
+                    </div>
+                    <div class="insta-img-wrapper">
+                        <img class="insta-gallery__img" src="img/insta6.jpg">
+                        <div class="insta-hover-view"><span>#instagood #testify #fashion</span></div>
+                    </div>
+                    <div class="insta-img-wrapper">
+                        <img class="insta-gallery__img" src="img/insta7.jpg">
+                        <div class="insta-hover-view"><span>#igers #testify #photooftheday</span></div>
+                    </div>
+                </div>
+        </div>
+
+        <p class="connect__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus mollitia neque in
+            doloremque nesciunt sunt fuga dolorum cum dolorem id sit autem tempore quisquam, ad, adipisci, blanditiis
+            quidem culpa. Perferendis.
+            Est adipisci non quas quos explicabo tenetur sequi nostrum provident. Beatae error velit officiis animi
+            quia.
+        </p>
+    </section>
+    <section class="coupons">
+        <div class="coupon-a">
+            <h4>Unlock</h4>
+            <h2 class="headline-bold coupon-a__h2">15<sup>%</sup></h2>
+            <h2 class="headline-bold coupon-a__h2">OFF</h2>
+            <h4>Your First Order *</h4>
+            <p class="small-text">
+                Laboriosam odio est dolorem distinctio asperiores maiores, officia repudiandae ipsa eum harum quibusdam
+                aperiam tenetur iste quisquam fugit porro provident nam laudantium qui, quo unde quaerat dolor neque.
+                Corrupti, voluptatem. Rerum aliquid ullam eos odit quo facere maxime non, commodi excepturi maiores nam.
+                1/1/2021 <a href="#">onsectetur quas. </a>
+            </p>
+            <form action="">
+                <input placeholder="Enter Your Email Address" type="email" class="email">
+                <p class="or">or</p>
+                <input placeholder="Enter Your Mobile Number" type="phone" class="phone">
+                <input type="submit" class="btn btn-special" value="Get 15% Off Now">
+            </form>
+        </div>
+        <div class="coupon-b">
+            <h3 class="coupon-b__h3">Up to</h3>
+            <div class="percentage">
+                <h1 class="coupon-b__h1">40</h1>
+                <sup>%</sup>
+                <h2 class="coupon-b__h2">Off</h2>
+            </div>
+            <h4 class="coupon-b__h4">This Weekend Only *</h4>
+            <p class="small-text">Sed ipsam doloribus, inventore beatae saepe cupiditate tempora, eveniet laboriosam in
+                assumenda veritatis accusantium
+                rem quos necessitatibus hic amet tempore. Optio adipisci eaque repellendus libero molestiae sequi
+                aliquid ullam earum.
+                Praesentium id vero unde ad eos commodi obcaecati fugit laudantium soluta! Eum dolores labore quaerat
+                accusamus repudiandae repellenus, unde repellat, dolor incidunt accusantium vitae libero quidem
+                inventore
+                possimus 1/1/2021 <a href="#">onsectetur quas. </a></p>
+            <a href="#" class="btn btn-default">Shop Sale</a>
+        </div>
+    </section>
+    <section class="mailing-list">
+        <h4>Don't miss out on deals and style updates!</h4>
+        <p>Join Our Mailing List</p>
+        <input type="email" class="mailing-list__input" placeholder="Enter Your Email Address">
+        <input type="submit" class="btn btn-inverse" value="Subscribe">
+        <p class="small-text">Impedit perspiciatis tenetur consequuntur ut inventore dolore alias vel aut dolores
+            corporis
+            assumenda, nam voluptate sint molestias quod ipsa illo. Ad, nihil.Veritatis odit harum rerum nemo error,
+            accusamus
+            aspernatur pariatur similique delectus amet ab corporis saepe distinctio assumenda, incidunt a commodi iure
+            minima
+            tempore magnam dolor? Perferendis doloribus nesciunt soluta ut.</p>
+    </section>
+    <footer>
+        <ul>
+            <h4 class="bold">Company</h4>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Sitemap</a></li>
+        </ul>
+        <ul>
+            <h4 class="bold">Help</h4>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns and Exchanges</a></li>
+        </ul>
+        <ul>
+            <h4 class="bold">Quick Links</h4>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Web Accessibility</a></li>
+            <li><a href="#">Manage Account</a></li>
+        </ul>
+        <div class="social-media">
+            <h4>Stay Connected</h4>
+            <div class="social-media-links">
+                <a class="icon social-media" target="_blank" href='https://www.instagram.com/'>
+                    <svg class="" title="Instagram">
+                        <use xlink:href="img/sprite.svg#icon-instagram">
+                    </svg>
+                </a>
+                <a class="icon social-media" target="_blank" href='https://www.facebook.com/'>
+                    <svg class="" title="Facebook">
+                        <use xlink:href="img/sprite.svg#icon-facebook">
+                    </svg>
+                </a>
+                <a class="icon social-media" target="_blank" href='https://www.linkedin.com/'>
+                    <svg class="" title="LinkedIn">
+                        <use xlink:href="img/sprite.svg#icon-linkedin">
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="login-view">
+        <form action="" class="login-form">
+
+            <h2>Dressify Login</h2>
+            <label for="email">Email Address:</label>
+            <input name="email" type="email">
+            <label for="password">Password:</label>
+            <input name="password" type="password">
+            <input type="button" value="Login">
+        </form>
+    </div>
+    <div class="create-view">
+        <form action="" class="create-form">
+
+            <h2>Create Dressify Account</h2>
+
+            <label for="email">First Name:</label>
+            <input name="first" type="text">
+            <label for="last">Last Name:</label>
+            <input name="last" type="text">
+            <label for="email">Email Address:</label>
+            <input name="email" type="email"><label for="password">Password:</label>
+            <input name="password" type="password">
+            <label for="password">Re-enter Password:</label>
+            <input name="password" type="password">
+            <input type="button" value="Create Account">
+        </form>
+    </div>
+</body>
+
+</html>

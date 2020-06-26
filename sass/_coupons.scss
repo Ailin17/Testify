@@ -1,0 +1,127 @@
+.coupons {
+  grid-column: full-start / full-end;
+  background: url(../img/leaves.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 3rem;
+  padding: 3rem;
+
+  @media only screen and (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+  }
+
+  & > div {
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+  }
+
+  a {
+    color: $dark-gray-3;
+  }
+}
+
+.coupon-a {
+  background: rgba(0, 0, 0, 0.7);
+  color: $white;
+  justify-items: center;
+  width: 100%;
+  text-align: center;
+
+  &__h2 {
+    font-size: 6rem;
+
+    & sup {
+      font-size: 3rem;
+    }
+  }
+
+  & .small-text {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  & .btn-special {
+    background: $primary-dark;
+    color: $white;
+    border: 1px solid $white;
+    margin: 2rem auto;
+    transition: all 0.2s;
+
+    &:hover {
+      background: $primary-light;
+      color: $dark-gray-1;
+    }
+  }
+}
+
+.coupon-b {
+  background: rgba(255, 255, 255, 0.7);
+  color: $primary-dark;
+  display: grid;
+
+  & .percentage {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content min-content;
+    justify-self: center;
+  }
+
+  &__h1,
+  &__h2,
+  &__h3,
+  &__h4,
+  & sup {
+    text-shadow: 0 2px 3px $dark-gray-1;
+    text-transform: uppercase;
+  }
+
+  &__h3 {
+    font-size: 5rem;
+    //   transform: translate(3rem, 2rem);
+  }
+
+  &__h2 {
+    font-size: 7rem;
+    justify-self: start;
+    @media only screen and (max-width: $bp-sm) {
+      font-size: 5rem;
+    }
+  }
+
+  &__h1 {
+    font-size: 25rem;
+    grid-row: 1 / -1;
+    justify-self: end;
+    @media only screen and (max-width: $bp-sm) {
+      font-size: 17rem;
+    }
+  }
+
+  & sup {
+    font-size: 10rem;
+    justify-self: start;
+    align-self: end;
+    @media only screen and (max-width: $bp-sm) {
+      font-size: 6rem;
+    }
+  }
+
+  &__h4 {
+    text-align: center;
+    font-size: 4rem;
+    display: inline;
+  }
+
+  & .small-text {
+    color: $dark-gray-1;
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  & .btn {
+    justify-self: center;
+    margin-top: 0rem;
+  }
+}

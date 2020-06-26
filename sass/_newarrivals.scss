@@ -1,0 +1,89 @@
+.new-arrivals {
+  grid-column: full-start / full-end;
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: minmax(4rem, 1fr) 80% minmax(4rem, 1fr);
+  // grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  padding: 4rem 0;
+  scroll-behavior: smooth;
+  grid-gap: 2rem;
+  @media only screen and (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+  }
+
+
+  & h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+}
+.dresses {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  grid-gap: 2rem;
+    @media only screen and (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+  grid-column: 1 / -1;
+  }
+
+}
+.dress {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $dark-gray-3;
+  position: relative;
+
+  & img {
+    height: 50rem;
+    object-fit: cover;
+    border: 1px solid $dark-gray-3;
+    transition: all 0.2s;
+    @media only screen and (max-width: $bp-md) {
+      height: 100%;
+      width: 40rem;
+    }
+    @media only screen and (max-width: $bp-sm) {
+      height: 100%;
+      width: 33rem;
+    }
+  }
+
+  & .quick-view {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+    transition: all 0.2s;
+    font-size: 1.6rem;
+    background: rgba(255, 255, 255, 0.1);
+
+    &:hover {
+      background: $dark-gray-1;
+      color: $primary;
+    }
+  }
+
+  &__name {
+    font-family: $font-secondary;
+    font-size: 2.5rem;
+  }
+
+  &__price {
+    font-family: $font-primary;
+    font-size: 1.5rem;
+  }
+}
+.img-hover {
+  filter: brightness(0.5);
+}
